@@ -1,0 +1,10 @@
+Day 01 :Installation
+	
+	1> Database-> MySQL 
+	2> Backend -> Python-Flask
+	3> Frontend -> React(vit)
+	4> Language -> JavaScript(JS)
+	5> Postman
+	6> VS Code
+
+All Installations are done!!!
