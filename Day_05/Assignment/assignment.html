@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <img src="image/sunbeam_img.jpg" alt="sunbeam_img" />
+
+    <h2 >Sunbeam Registration Form</h2>
+
+    <!-- Main layout table -->
+    <table>
+        <tr>
+
+            <!-- LEFT SIDE : VIDEO -->
+            <td valign="top">
+                <iframe
+                    width="300"
+                    height="200"
+                    src="https://www.youtube.com/embed/02q9aAVv1NI"
+                    title="YouTube video"
+                    allowfullscreen>
+                </iframe>
+            </td>
+
+            <!-- RIGHT SIDE : FORM -->
+            <td valign="top">
+                <form onsubmit="return registerUser()">
+                    <table>
+
+                        <tr>
+                            <td>Name:</td>
+                            <td>
+                                <input type="text" id="name"
+                                placeholder="Enter your name" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Birth Date:</td>
+                            <td><input type="date" id="dob"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" id="email"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" id="password"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Address:</td>
+                            <td>
+                                <textarea rows="3" cols="25"
+                                placeholder="Enter address"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <input type="radio" name="gender"> Male
+                                <input type="radio" name="gender"> Female
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Upload Photo:</td>
+                            <td><input type="file"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Select Course:</td>
+                            <td>
+                                <select>
+                                    <option>Select course</option>
+                                    <option>Java</option>
+                                    <option>Python</option>
+                                    <option>Web Development</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Skill Set:</td>
+                            <td>
+                                <input type="checkbox"> Java
+                                <input type="checkbox"> CPP
+                                <input type="checkbox"> OS
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Register">
+                                <input type="reset" value="Clear">
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </td>
+
+        </tr>
+    </table>
+
+    <script>
+        function registerUser() {
+            let name = document.getElementById("name").value;
+
+            if (name === "") {
+                alert("Name is required");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return false;
+        }
+    </script>
+
+</body>
+</html>
+
+Attachments area
+Preview YouTube video Sunbeam Institute of IT - Pune & KaradPreview YouTube video Sunbeam Institute of IT - Pune & Karad
+
