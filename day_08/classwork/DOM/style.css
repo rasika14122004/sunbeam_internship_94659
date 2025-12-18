@@ -1,0 +1,14 @@
+#title{
+    color:brown;
+    font-size: 50px;
+}
+
+#message{
+    color:#ff003c;
+    font-size: 20px;
+}
+
+button{
+    color:darkolivegreen;
+    cursor:pointer;
+}
